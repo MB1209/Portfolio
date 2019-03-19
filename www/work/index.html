@@ -1,0 +1,18 @@
+{{>head}}
+
+<div>
+        <a href="/">
+        <h3>&lt;&lt;</h3>
+        </a>
+</div>
+
+<main>
+
+
+    {{#section Projekte multiple=true order=Titel}}
+        <a href="{{_permalink}}">
+          {{Bild type=image width=250}}
+        </a>
+    {{/section}}
+    
+</main>
