@@ -12,7 +12,23 @@
 
                             {{#section Projekte}}
                                 <h1>{{Titel}}</h1>
-                                {{Bild type=image}}
+                                {{Bild label="Coverbild" type=image width=250}}
+
+                                {{#if Bild2}}
+                                    {{Bild2 type=image width=250 required=false}}
+                                {{/if}}
+
+                                {{#if Bild3}}
+                                    {{Bild3 type=image width=250 required=false}}
+                                {{/if}}
+
+                                {{#if Bild4}}
+                                    {{Bild4 type=image width=250 required=false}}
+                                {{/if}}
+
+                                {{#if Bild5}}
+                                    {{Bild5 type=image width=250 required=false}}
+                                {{/if}}
                                 {{description type=html}}
                             {{/section}}
 
